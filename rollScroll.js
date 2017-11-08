@@ -5,8 +5,29 @@
 var configRoll = {
 	rollID: 'rollID'
 };
+//if (!document.getElementsByClassName) {
+//	document.getElementsByClassName = function(className, element) {
+//		var children = (element || document).getElementsByTagName('*');
+//		var elements = new Array();
+//		for (var i = 0; i < children.length; i++) {
+//			var child = children[i];
+//			var classNames = child.className.split(' ');
+//			for (var j = 0; j < classNames.length; j++) {
+//				if (classNames[j] == className) {
+//					elements.push(child);
+//					break;
+//				}
+//			}
+//		}
+//		return elements;
+//	};
+//}
 var rollMovement = '';
-var rollBox = document.getElementById('roll');
+//var rollBox = document.getElementById('roll');
+var rollBox = document.getElementsByClassName('roll')[0];
+//for(i=0;i<rollBox.len;i++){
+//
+//}
 rollBox.style.overflowY = 'hidden';
 rollBox.style.position = 'relative';
 var roller = document.createElement('div');
